@@ -1,0 +1,13 @@
+android-app/.gradle/
+android-app/.gradle-home/
+android-app/toolchain/
+android-app/app/build/
+android-app/app/keys/
+android-app/build/
+android-app/.idea/
+android-app/local.properties
+package-stage/
+.openai/
+site-package.tar.gz
+*.apk
+*.zip
