@@ -1,0 +1,31 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.jigong.calendar'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.jigong.calendar'
+        minSdk 24
+        targetSdk 34
+        versionCode 6
+        versionName '1.2.1'
+    }
+
+    // Configure your own signing key locally for release builds.
+    // Do not commit passwords or keystore files to the repository.
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    sourceSets {
+        main { assets.srcDirs = ['../../dist'] }
+    }
+}
